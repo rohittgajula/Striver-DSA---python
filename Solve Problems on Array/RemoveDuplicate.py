@@ -14,5 +14,6 @@ def RemoveDuplicate(arr):
     return arr[0:count+1]
 
 
-arr = [0,0,1,1,1,2,2,3,4,4,4,4,4,5,5]
+arr = [0,0,1,1,2,3,3]
 print(RemoveDuplicate(arr))
+
