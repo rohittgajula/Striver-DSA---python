@@ -1,5 +1,18 @@
 def RemoveDuplicate(arr):
-    pass
+    n = len(arr)
+    if (n == 0 or n == 1):
+        return arr
 
-arr = [5,4,6,5,3,3,1]
+    count = 0
+
+    for i in range(n-1):
+        if arr[i] != arr[i+1]:
+            arr[count] = arr[i]
+            count += 1
+    arr[count] = arr[n-1]
+
+    return arr[0:count+1]
+
+
+arr = [0,0,1,1,1,2,2,3,4,4,4,4,4,5,5]
 print(RemoveDuplicate(arr))
