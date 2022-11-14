@@ -1,5 +1,5 @@
 # Method 1
-import timeit
+
 def rotateArray(arr, step):
     n = len(arr)
     temp = []
