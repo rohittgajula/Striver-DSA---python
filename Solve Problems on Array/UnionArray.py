@@ -1,6 +1,6 @@
 def unionArray(arr1, arr2):
-    m = len(arr1)
-    n = len(arr2)
+    m = len(arr1)  # m=4
+    n = len(arr2)  # n=3
 
     i = 0
     j = 0
@@ -29,8 +29,8 @@ def unionArray(arr1, arr2):
         temp.append(arr2[j])
         j += 1
     
-    print(temp)
-    print(temp1)            # for intersection
+    print(str(temp) + " is the union of two arrays")
+    print(str(temp1) + " is the intersection of two arrays")
 
 firstArray = [1,2,4,5]
 secondArray = [2,3,6]
