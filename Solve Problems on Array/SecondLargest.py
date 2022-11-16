@@ -1,3 +1,5 @@
+# Given an array Arr of size N, print second largest element from an array.
+
 def SecondLargest(arr):
     n = len(arr)
     largestValue = arr[0]

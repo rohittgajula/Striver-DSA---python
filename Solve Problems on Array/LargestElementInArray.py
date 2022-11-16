@@ -1,3 +1,5 @@
+# Given an array A[] of size n. The task is to find the largest element in it.
+
 def Largest(arr):
     n = len(arr)
     max = arr[0]   # here max value is 1 as arr[0] = 1
