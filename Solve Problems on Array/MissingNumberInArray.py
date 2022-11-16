@@ -26,7 +26,7 @@ def missingNumber(arr):
 
     return abs(int(expectedSum - actualSum))
 
-arr = [1,3]
+arr = [0,1,3,4,5]
 print(MissingNumber(arr))
 print(missingNumber(arr))
 

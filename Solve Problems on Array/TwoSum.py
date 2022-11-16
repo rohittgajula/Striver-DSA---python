@@ -11,6 +11,6 @@ def TwoSum(arr, target):
 
 
 arr = [2,7,11,15]
-target = 9
+target = 22
 print(TwoSum(arr, target))
 
