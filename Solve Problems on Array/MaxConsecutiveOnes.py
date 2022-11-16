@@ -15,6 +15,6 @@ def MaxConsecutiveOnes(arr):
 
     return result
 
-arr = [1, 1, 0, 0, 1, 0, 1, 0, 1, 1, 1, 1, 0]
+arr = [1,1,0,1,1,1]
 print(MaxConsecutiveOnes(arr))
 
