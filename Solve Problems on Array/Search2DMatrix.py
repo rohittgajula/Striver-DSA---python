@@ -16,9 +16,9 @@ def SearchMatrix(matrix, target):
         if not (top <= bottom):
             return False
 
-    row = (top + bottom) // 2
+    row = (top + bottom) // 2    # rows = 3
     l = 0
-    r = columns - 1
+    r = columns - 1              # columns = 4
     while l <= r:
         m = (l + r) // 2
         if target > matrix[row][m]:
