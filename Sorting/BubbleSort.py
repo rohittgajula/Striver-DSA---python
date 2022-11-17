@@ -6,7 +6,7 @@ def bubbleSort(arr):
     n = len(arr)
 
     for i in range(n-1):
-        for j in range(n-1-i):      # -i is used to delete sorted list. we can delete -i also
+        for j in range(n-1):      # -i is used to delete sorted list. we can delete -i also
             if arr[j] > arr[j+1]:
 
                 temp = arr[j]
