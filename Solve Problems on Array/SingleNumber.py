@@ -8,10 +8,11 @@ def SingleNumber(arr):
     for n in arr:
         if n not in counts:
             counts[n] = 1       # inserting n value in counts 4:1. 1 is any value.
-            print(counts)
+            print(counts)       # to print dictionary
         else:
             del counts[n]
-    return list(counts.keys())[0]
+            print(counts)       # to print dictionary
+    return list(counts.keys())
 
 arr = [4,1,2,1,2]
 print(SingleNumber(arr))
