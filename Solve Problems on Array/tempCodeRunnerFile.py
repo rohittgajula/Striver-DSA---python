@@ -1,2 +1,1 @@
-for i in range(n):
-        temp[arr[i]-1] = 1
+arr = [1, 4, 45, 6, 10, 8]

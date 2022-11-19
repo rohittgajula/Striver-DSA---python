@@ -30,3 +30,4 @@ mat  = [
         [0,0,0,0]
 ]
 print(rowWithMin1s(mat))
+

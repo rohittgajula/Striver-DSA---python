@@ -1,12 +1,12 @@
 # method 1      time complexity is : O(n^3)
 #               Space complexity is : O(1)
 
-def TripletSum(arr, target):
-    n = len(arr)
+def TripletSum(arr, target):    #  0  1  2   3   4  5
+    n = len(arr)                # [1, 4, 45, 6, 10, 8]
 
     for i in range(0,n):
-        for j in range(i+1,n-1):
-            for k in range(j+1,n-1):
+        for j in range(i+1,n):
+            for k in range(j+1,n):
                 if arr[i] + arr[j] + arr[k] == target:
                     print( arr[i], arr[j], arr[k])
                     return True
@@ -17,7 +17,7 @@ def TripletSum(arr, target):
 
 def tripletSum(arr, target):
     n = len(arr)
-    arr.sort()
+    arr.sort()      # [1, 4, 6, 8, 10, 45]
 
     for i in range(0, n):
 
@@ -29,7 +29,7 @@ def tripletSum(arr, target):
                 return True
             elif(arr[i] + arr[l] + arr[r] < target):
                 l += 1
-            else:
+            else:   # (arr[i] + arr[l] + arr[r] > target)
                 r -= 1
     return False
 
@@ -50,8 +50,9 @@ def Triplets(arr, target):
             s.add(arr[j])
     return False
 
+
 arr = [1, 4, 45, 6, 10, 8]
-target = 50
+target = 22
 print(TripletSum(arr, target))
 print(tripletSum(arr, target))
 print(Triplets(arr, target))
