@@ -18,7 +18,8 @@ def Stocks(arr):
     else:
         return 0
 
-# method 2
+# method 2          time complexity is : O(n)
+#                   space complexity is : O(1)
 
 def stocks(arr):
     n = len(arr)        # [7,1,5,3,6,4]
