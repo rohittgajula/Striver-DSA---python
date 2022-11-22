@@ -2,9 +2,9 @@
 # method 2          Time Complexity is : O(n)
 #                   Space Complexity is : O(n)
 
-def MajorityElements(arr):
+def MajorityElements(arr):      # [3,2,3,2,3]
     n = len(arr)
-    m = {}
+    m = {}          
 
     for i in range(n):
         if arr[i] in m:
@@ -46,7 +46,7 @@ def majorityelement(arr):
 
 
 arr = [3,2,3,2,3]
-majorityelement(arr)
-print()
 MajorityElements(arr)
+print()
+majorityelement(arr)
 

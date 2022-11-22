@@ -33,7 +33,7 @@ def stocks(arr):
             maxProfit = arr[i] - buy
     return maxProfit
 
-arr = [7,1,5,3,6,4]
+arr = [100, 180, 260, 310, 40, 535, 695]
 print(Stocks(arr))
 print(stocks(arr))
 
