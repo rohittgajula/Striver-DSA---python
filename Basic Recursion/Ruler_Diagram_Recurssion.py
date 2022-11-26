@@ -24,3 +24,4 @@ class EnglishRuler:
 if __name__ == '__main__':
     ruler = EnglishRuler(5,6)
     ruler.draw_ruler()
+

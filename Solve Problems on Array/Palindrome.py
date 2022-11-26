@@ -9,3 +9,4 @@ def Palindrome(str):
 
 str = "A man, a plan, a canal: Panama"
 print(Palindrome(str))
+

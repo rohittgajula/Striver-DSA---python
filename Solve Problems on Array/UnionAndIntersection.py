@@ -21,14 +21,14 @@ def unionArray(arr1, arr2):
             j += 1
         print(temp, i, j)       # for step by step process
     print()
-        
+
     while i < m:
         temp.append(arr1[i])
         i += 1
     while j < n:
         temp.append(arr2[j])
         j += 1
-    
+
     print(str(temp) + " is the union of two arrays")
     print(str(temp1) + " is the intersection of two arrays")
 

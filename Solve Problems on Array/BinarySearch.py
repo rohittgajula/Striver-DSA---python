@@ -22,6 +22,7 @@ def BinarySearch(arr, target):
         print("Key is not found.")
 
 # method 2
+# using recursion
 
 def binarySearch(arr, low, high, target):
     arr.sort()                  # [1,2,3,5,6,8]

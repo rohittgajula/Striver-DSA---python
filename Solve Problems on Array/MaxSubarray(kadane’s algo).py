@@ -13,7 +13,7 @@ def MaxSubarray(arr):
     return maxSub
 
 # method 2          Using DP method
-# Time Complexity is less in this.``
+# Time Complexity is less in this.
 
 def maxSubarray(arr):
     n = len(arr)

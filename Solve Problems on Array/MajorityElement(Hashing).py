@@ -4,7 +4,7 @@
 
 def MajorityElements(arr):      # [3,2,3,2,3]
     n = len(arr)
-    m = {}          
+    m = {}
 
     for i in range(n):
         if arr[i] in m:
