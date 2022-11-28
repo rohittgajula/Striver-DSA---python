@@ -26,6 +26,7 @@ def ReArrange(arr):
     ans = [None] * n
 
     ans[::2] = (x for x in arr if x > 0)
+    print(ans)
     ans[1::2] = (x for x in arr if x < 0)
     return ans
 

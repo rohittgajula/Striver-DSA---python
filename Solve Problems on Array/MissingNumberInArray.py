@@ -8,7 +8,7 @@ def MissingNumber(arr):
     ans = 0
     arr.sort()
 
-    for i in range(n):
+    for i in range(n):              # [0,1,3,4,5]
         temp[arr[i]-1] = 1
         print(temp, i)
 
@@ -30,5 +30,6 @@ def missingNumber(arr):
 
 arr = [0,1,3,4,5]
 print(MissingNumber(arr))
+print()
 print(missingNumber(arr))
 
