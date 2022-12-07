@@ -15,3 +15,4 @@ def SingleElement(arr, n):
 arr = [1,1,3,3,4,4,8]
 n = len(arr)
 print(SingleElement(arr, n))
+
