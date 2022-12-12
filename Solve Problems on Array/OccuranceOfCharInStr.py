@@ -1,4 +1,4 @@
-s = "jnjivnbifvhuevuibncsnjb"
+s = "Sai Rohit hai"
 d = {}
 
 for i in s:
