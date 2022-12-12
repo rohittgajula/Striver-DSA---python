@@ -15,7 +15,32 @@ def Position(arr, target):
         last = i
     return (first, last)
 
+# method 2
+# time complexity is : O(log N)
+
+def BinSearch(arr, target, leftBias):
+    l = 0
+    r = len(arr) - 1
+    i = -1
+
+    while l <= r:
+        m = (l+r)//2
+        if target > arr[m]:
+            l = m+1
+        elif target < arr[m]:
+            r = m-1
+        else:
+            i = m
+            if leftBias:
+                r = m-1
+            else:
+                l = m+1
+    return i
+
 arr = [5,7,7,8,8,10]
 target = 7
 print(Position(arr, target))
-
+# --------------------------
+left = BinSearch(arr, target, True)
+right = BinSearch(arr, target, False)
+print([left, right])
