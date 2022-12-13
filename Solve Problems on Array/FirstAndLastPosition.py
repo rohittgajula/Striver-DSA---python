@@ -22,7 +22,7 @@ def BinSearch(arr, target, leftBias):
     l = 0
     r = len(arr) - 1
     i = -1
-
+ 
     while l <= r:
         m = (l+r)//2
         if target > arr[m]:
@@ -37,10 +37,12 @@ def BinSearch(arr, target, leftBias):
                 l = m+1
     return i
 
+# ------------------------------
+
 arr = [5,7,7,8,8,10]
-target = 7
+target = 8
 print(Position(arr, target))
-# --------------------------
+
 left = BinSearch(arr, target, True)
 right = BinSearch(arr, target, False)
 print([left, right])
