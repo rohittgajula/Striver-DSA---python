@@ -40,5 +40,6 @@ def binarySearch(arr, low, high, target):
 arr = [3,5,1,6,2,8]
 target = 6
 BinarySearch(arr, target)
+print()
 print(binarySearch(arr, 0, len(arr)-1, target))
 
