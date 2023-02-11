@@ -1,15 +1,5 @@
 
 
-def first(arr, low, high, target, n):
-    if (high >= low):
-        mid = low + (high - low) // 2
-        if ((mid == 0 or target > arr[mid - 1]) and arr[mid] == target):
-            return mid
-        elif (target > arr[mid]):
-            return first(arr, (mid + 1), high, target, n)
-        else:
-            return first(arr, low, (mid - 1), target, n)
-    return -1
 
 def last(arr, low, high, target, n):
     if (high >= low):
