@@ -6,8 +6,8 @@ def BinarySearch(arr, target):
     high = n-1
     Found = False
 
-    while low <= high and not Found:
-        mid = (low + high)//2
+    while low < high and not Found:
+        mid = (low + high) // 2
         if (target < arr[mid]):
             high = mid - 1
         elif (target > arr[mid]):
@@ -16,10 +16,11 @@ def BinarySearch(arr, target):
             Found = True
 
     if Found == True:
-        return "Target number is found."
+        return "Target is found!"
     else:
-        return "Target number is not found."
+        return "Target is not found!!"
 
-arr = [3,5,1,6,2,8]
-target = 10
+arr = [3,5,1,6,9,10]
+target = 11
 print(BinarySearch(arr, target))
+
