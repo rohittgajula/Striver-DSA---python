@@ -81,21 +81,64 @@ class LinkedList:
             new_node.ref = n.ref
             n.ref = new_node
 
-# for traverse operation
+    # how to delete the node from the beginning of the LinkedList.
+    # https://www.youtube.com/watch?v=LiWt1PUxBbQ&list=RDCMUCIgXF0FrYJL0a6sMsRIsLvA&index=4
+    def delete_begin(self):
+        if self.head is None:
+            print("LinkedList is empty.")
+        else:
+            self.head = self.head.ref
+
+    # how to delete any node in a LinkedList
+    # https://www.youtube.com/watch?v=wjW6Zhf-bqw&list=RDCMUCIgXF0FrYJL0a6sMsRIsLvA&index=5
+    def delete_by_value(self, x):
+        # if the key is empty
+        if self.head is None:
+            print("LinkedList is empty.")
+            return
+        
+        # if key is the head
+        if self.head.data == x:
+            self.head = self.head.ref
+            return
+        
+        # find the position of the first occurrence of the key
+        current = self.head
+        while current is not None:
+            if current.data == x:
+                break
+            previous = current
+            current = current.ref
+
+        # if the key was not found
+        if current is None:
+            print("Key not found.")
+        else:
+            previous.ref = current.ref
+
+
+
+# for assigning the LinkedList class
 LL1 = LinkedList()
 
 # for adding in the beginning operation
-LL1.add_begin(27)
-LL1.add_begin(9)
+LL1.add_begin(100)
 
 # for adding in the ending operation
-LL1.add_end(100)
+LL1.add_end(400)
 
 # for adding after the given node
-LL1.add_after(270, 100)
+LL1.add_after(200, 100)
 
 # for adding before the given node
-LL1.add_before(500, 270)
+LL1.add_before(300, 400)
+
+# to print the actual value before deleting
+LL1.print_LL()
+print()
+
+# for deleting the first node
+LL1.delete_by_value(300)
 
 # for traverse operation/continuation to line-42
 LL1.print_LL()
