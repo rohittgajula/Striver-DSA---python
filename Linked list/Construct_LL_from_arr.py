@@ -1,26 +1,34 @@
-class Node1:
+class Node:
     def __init__(self, data):
         self.data = data
         self.ref = None
 
-def display1(root):
-    while root is not None:
-        print(root.data, end=" ")
-        root = root.ref
+def arr_to_LL(arr, n):
+    linkedlist = None
 
-def arr_to_LL1(arr, n):
-    root = None
     for i in range(0,n):
-        new_node = Node1(arr[i])
-
-        if root == None:
-            root = new_node
+        new_node = Node(arr[i])
+        if linkedlist is None:
+            linkedlist = new_node
         else:
-            head = root
+            head = linkedlist
             while head.ref is not None:
                 head = head.ref
             head.ref = new_node
-    return root
+    return linkedlist
+
+def display_LL(linkedlist):
+    if linkedlist is None:
+        print("LinkedList is empty!!")
+    else:
+        while linkedlist is not None:
+            print(linkedlist.data, end=" ")
+            linkedlist = linkedlist.ref
+
+arr = [1,2,3,4,5]
+n = len(arr)
+linkedlist = arr_to_LL(arr, n)
+display_LL(linkedlist)
 
 # using an extra function
 
@@ -52,14 +60,8 @@ def arr_to_LL2(arr, n):
         root = insert(root, arr[i])
     return root
 
-
+print()
 arr = [6,7,4,3,7]
 n = len(arr)
-
-root = arr_to_LL1(arr, n)
-display1(root)
-
-print()
-
 root = arr_to_LL2(arr, n)
 display2(root)
