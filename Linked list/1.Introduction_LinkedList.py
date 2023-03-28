@@ -1,4 +1,4 @@
-# How to create a node
+ # How to create a node
 # https://www.youtube.com/watch?v=xRTdfZsAz6Y
 class Node:
     def __init__(self, data):
