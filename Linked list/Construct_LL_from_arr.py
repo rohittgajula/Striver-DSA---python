@@ -65,3 +65,4 @@ arr = [6,7,4,3,7]
 n = len(arr)
 root = arr_to_LL2(arr, n)
 display2(root)
+
